@@ -1,0 +1,8 @@
+package core ;
+import base.* ;
+import java.util.* ;
+
+
+public class Segment
+{
+	

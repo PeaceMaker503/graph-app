@@ -1,0 +1,46 @@
+package core ;
+import base.* ;
+import java.util.* ;
+
+public class Sommet
+{
+	float longitude;
+	float latitude;
+	ArrayList<Arc> arcsSortant;
+	
+	public Sommet(float longitude, float latitude)
+	{
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.arcsSortant = new ArrayList<Arc>();
+	}
+
+	public Sommet()
+	{
+		this.longitude = 0;
+		this.latitude = 0;
+		this.arcsSortant = new ArrayList<Arc>();
+	}
+
+	public void setCoordonnees(float longitude, float latitude)
+	{
+		this.longitude = longitude;
+		this.latitude = latitude;
+	}
+	
+	public void addArc(Arc a)
+	{
+		this.arcsSortant.add(a);
+	}
+
+	public float getLongitude()
+	{
+		return this.longitude;
+	}
+	
+	public float getLatitude()
+	{
+		return this.latitude;
+	}
+}
+	

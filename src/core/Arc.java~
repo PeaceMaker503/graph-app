@@ -1,0 +1,17 @@
+package core ;
+import base.* ;
+import java.util.* ;
+
+public class Arc
+{
+	private Sommet debut;
+	private Sommet fin;
+	private Descripteur description;
+	
+	public Arc(Sommet debut, Sommet fin, Descripteur description)
+	{
+		this.debut = debut;
+		this.fin = fin;
+		this.description = description;
+	}
+}
